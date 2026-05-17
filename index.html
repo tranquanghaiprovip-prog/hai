@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>HAI7D | KINGMC</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:linear-gradient(-45deg,#ff0000,#00ffcc,#6600ff,#ff0099);
+    background-size:400% 400%;
+    animation:bg 10s ease infinite;
+    color:white;
+    overflow-x:hidden;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    box-shadow:0 0 30px cyan;
+    animation:spin 8s linear infinite;
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+h1{
+    margin-top:20px;
+    font-size:70px;
+    text-shadow:0 0 20px cyan;
+}
+
+.rank{
+    font-size:30px;
+    color:yellow;
+    margin-top:10px;
+}
+
+.box{
+    margin-top:40px;
+    background:rgba(0,0,0,0.4);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px black;
+}
+
+.box h2{
+    color:cyan;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill{
+    background:white;
+    color:black;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:scale(1.1);
+    background:cyan;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:lime;
+    font-size:20px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:yellow;
+}
+
+.footer{
+    margin-top:50px;
+    opacity:0.8;
+}
+
+.particles{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.particles span{
+    position:absolute;
+    display:block;
+    width:20px;
+    height:20px;
+    background:white;
+    animation:animate 25s linear infinite;
+    bottom:-150px;
+    border-radius:50%;
+    opacity:0.5;
+}
+
+@keyframes animate{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-1000px) rotate(720deg);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="particles">
+<span style="left:10%;animation-delay:0s;"></span>
+<span style="left:20%;animation-delay:2s;"></span>
+<span style="left:35%;animation-delay:4s;"></span>
+<span style="left:50%;animation-delay:1s;"></span>
+<span style="left:65%;animation-delay:6s;"></span>
+<span style="left:80%;animation-delay:3s;"></span>
+<span style="left:90%;animation-delay:5s;"></span>
+</div>
+
+<div class="container">
+
+<img class="avatar" src="https://i.imgur.com/4M34hi2.png">
+
+<h1>HAI7D</h1>
+
+<div class="rank">
+👑 KING Rank In KINGMC 👑
+</div>
+
+<div class="box">
+<h2>Giới Thiệu</h2>
+
+<p>
+Xin chào, mình là HAI7D.
+Một game thủ yêu thích Minecraft và hiện đang chơi tại server KINGMC.
+Mục tiêu của mình là trở thành người chơi mạnh nhất và xây dựng cộng đồng vui vẻ.
+</p>
+
+</div>
+
+<div class="box">
+
+<h2>Kỹ Năng</h2>
+
+<div class="skills">
+<div class="skill">Minecraft PvP</div>
+<div class="skill">Builder</div>
+<div class="skill">Survival</div>
+<div class="skill">PvP Rank</div>
+<div class="skill">Gaming</div>
+<div class="skill">Creative</div>
+</div>
+
+</div>
+
+<div class="box">
+
+<h2>Thông Tin</h2>
+
+<p>🎮 Server: KINGMC</p>
+<p>👑 Rank: KING</p>
+<p>🔥 Nickname: HAI7D</p>
+<p>⚡ Sở thích: Gaming & Coding</p>
+
+<button onclick="hello()">
+Bấm Vào Đây
+</button>
+
+</div>
+
+<div class="footer">
+<p>© 2025 HAI7D</p>
+</div>
+
+</div>
+
+<script>
+function hello(){
+    alert("Chào mừng đến với website của HAI7D!");
+}
+</script>
+
+</body>
+</html>
